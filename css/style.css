@@ -406,6 +406,7 @@ section {
 .place-details img {
   max-width: 100%;
   height: auto;
+  text-align:justify;
   margin-bottom: 10px;
 }
 
