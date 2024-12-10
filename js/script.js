@@ -383,38 +383,7 @@ window.onclick = function(event) {
 //booking
         
         
-// Live Chat
-const chatToggle = document.getElementById('chat-toggle');
-const chatWindow = document.getElementById('chat-window');
-const chatInput = document.getElementById('chat-input');
-const chatSend = document.getElementById('chat-send');
-const chatMessages = document.getElementById('chat-messages');
 
-chatToggle.addEventListener('click', () => {
-    chatWindow.style.display = chatWindow.style.display === 'none' ? 'flex' : 'none';
-});
-
-chatSend.addEventListener('click', sendMessage);
-chatInput.addEventListener('keypress', function(e) {
-    if (e.key === 'Enter') sendMessage();
-});
-
-function sendMessage() {
-    const message = chatInput.value.trim();
-    if (message) {
-        addMessage('You', message);
-        chatInput.value = '';
-        // Simulate a response (in a real app, this would come from a server)
-        setTimeout(() => addMessage('Support', 'Thank you for your message. How can we help you today?'), 1000);
-    }
-}
-
-function addMessage(sender, text) {
-    const messageElement = document.createElement('div');
-    messageElement.innerHTML = `<strong>${sender}:</strong> ${text}`;
-    chatMessages.appendChild(messageElement);
-    chatMessages.scrollTop = chatMessages.scrollHeight;
-}
 
 
 
