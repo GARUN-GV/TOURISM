@@ -142,8 +142,6 @@
 
 
         <!--Explore -->
-
-           
         
 
         <!--tours-->
@@ -221,19 +219,29 @@
         </section>
         <!-- About -->
 
-          <!-- Weather Widget
-          <section id="weather">
-            <div class="title">
-                <h1 class="font-color">Current Weather</h1>
-                <div class="line"></div>
-            </div>
-            <div id="weather-widget"></div>
-        </section> -->
-
          <!-- Booking System -->
 
-         
-
+         <section id="booking">
+            <div class="title">
+                <h1 class="font-color">Book Your Adventure</h1>
+                <div class="line"></div>
+            </div>
+            <form id="booking-form">
+                <input type="text" id="booking-name" placeholder="Your Name" required>
+                <input type="email" id="booking-email" placeholder="Your Email" required>
+                <input type="number" id ="booking-number" placeholder="Phone Number" required>
+                
+                <select id="tour" required>
+                    <option value="">Select a Tour</option>
+                    <option value="everest">Everest Base Camp Trek</option>
+                    <option value="walking">Walking Holidays</option>
+                    <option value="andaman">Andaman Beaches</option>
+                    <option value=""></option>
+                </select>
+                <input type="date" id="date" required>
+                <button type="submit" class="ctn">Book Now</button>
+            </form>
+        </section>
 
          <!-- Booking System -->
 
@@ -303,16 +311,6 @@
         <!-- contact  -->
 
        
-        <!-- Live Chat -->
-        <div id="live-chat">
-            <button id="chat-toggle" class="ctn">Chat with Us</button>
-            <div id="chat-window" style="display: none;">
-                <div id="chat-messages"></div>
-                <input type="text" id="chat-input" placeholder="Type your message...">
-                <button id="chat-send" class="ctn">Send</button>
-            </div>
-        </div>
-
         <!-- up scroll -->
         <i class="arrow"  onclick="topFunction()" id="upbtn"></i>
         <!-- end -->
